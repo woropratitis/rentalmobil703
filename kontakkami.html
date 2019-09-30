@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>703 Rent Car</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="assets/icon/car.ico">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="captcha.min.js"></script>
+
+    <!-- -------css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style1.css">
+
+</head>
+
+<body>
+
+    <!-- ---------------------------------Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">703 Rent Car</a>
+
+        <div class="navbar navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="katalog.html">Katalog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kontak Kami</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-success" type="submit" data-toggle="modal" data-target="#masuk">
+                    <a href="#" class="font-color">Sign In</a>
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- -------Signin -->
+    <!-- Modal login -->
+    <div id="masuk" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign In to 703 Rent Car</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="signup.html" class="font-color">
+                        <button type="button" class="btn btn-primary">Sign Up</button>
+                    </a>
+                    <a href="catalog.html" class="font-color">
+                        <button type="button" class="btn btn-primary">Login</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1569770339234!6m8!1m7!1s2P5FgsYWhgjBIKn6TzmCpQ!2m2!1d-7.434853471765718!2d109.2593904359581!3f208.21!4f-20.459999999999994!5f0.7820865974627469" width="1110" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark">
+        <div style="background-color: teal;">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0"><i class="fas fa-info-circle"></i> Get connected with us on social networks!</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container font-color text-center text-md-left mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Rental Mobil</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Kami menyediakan layanan sewa mobil untuk berlibur atau acara-acara penting. kami menawarakan berbagai jenis mobil sesuai dengan kebutuhan anda.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Jasa</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-car"></i>
+                        <a href="katalog.html">   Katalog Mobil</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Media Sosial</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fab fa-facebook"></i>
+                        <a href="https://www.facebook.com">Facebook</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-instagram"></i>
+                        <a href="#!">Instagram</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-twitter"></i>
+                        <a href="#!">Twitter</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-google-plus-g"></i>
+                        <a href="#!">Google</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Kontak Kami</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i>Jl. Sokabaru 3 No.44 Berkoh Purwokerto</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> pratitisworo@gmail.com </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> +62 85 7124 15 595 </p>
+                    <p>
+                        <i class="fab fa-whatsapp mr-3"></i> +62 85 7124 15 595 </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3 font-color">© 2019 Copyright:
+            <a href="github.com/woropratitis/rentalmobil703"> 703RentCar.com</a>
+        </div>
+    </footer>
+</body>
+
+</html>
